@@ -8,7 +8,7 @@ load_dotenv()
 
 access_token = os.environ["ACCESS_TOKEN"]
 model = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4", use_auth_token=access_token)
-model.to("cpu")
+model.to("cuda")
 
 prompt = "Word"
 

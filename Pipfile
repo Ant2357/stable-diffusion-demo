@@ -7,8 +7,9 @@ name = "pypi"
 diffusers = "*"
 transformers = "*"
 scipy = "*"
-torch = "*"
 python-dotenv = "*"
+torch = {file = "https://download.pytorch.org/whl/cu116/torch-1.12.0%2Bcu116-cp310-cp310-win_amd64.whl"}
+torchvision = {file = "https://download.pytorch.org/whl/cu116/torchvision-0.13.0%2Bcu116-cp310-cp310-win_amd64.whl"}
 
 [dev-packages]
 
